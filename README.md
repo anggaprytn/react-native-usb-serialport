@@ -17,7 +17,7 @@ The usb serial port part include `.aar` library from [felHR85/UsbSerial](https:/
 The socket part copy and modify code from [react-native-tcp-socket@5.2.1](https://github.com/Rapsssito/react-native-tcp-socket/tree/v5.2.1)
 
 ## Changelog
-### [3.0.1] - 2025-06-05
+### [3.1.0] - 2025-06-05
 - Removed local `.aar` file (`usbserial-6.1.0-release.aar`) from `libs/` directory
 - Replaced with remote Maven dependency: `implementation 'com.github.felHR85:UsbSerial:6.1.0'` via JitPack
 - Added JitPack repository to `repositories` block for compatibility
