@@ -17,22 +17,27 @@ The usb serial port part include `.aar` library from [felHR85/UsbSerial](https:/
 The socket part copy and modify code from [react-native-tcp-socket@5.2.1](https://github.com/Rapsssito/react-native-tcp-socket/tree/v5.2.1)
 
 ## Changelog
-### [3.0.0] - 2024-08-23
-Support android targeting S+
+### [3.0.1] - 2025-06-05
+- Removed local `.aar` file (`usbserial-6.1.0-release.aar`) from `libs/` directory
+- Replaced with remote Maven dependency: `implementation 'com.github.felHR85:UsbSerial:6.1.0'` via JitPack
+- Added JitPack repository to `repositories` block for compatibility
+- This resolves the `Direct local .aar file dependencies are not supported when building an AAR` error during `assembleRelease` in AGP 6.7.1+
 
-Fix `Direct local .aar file dependencies are not supported when building an AAR` when assemble release in gradle-6.7.1 or higher.
+### [3.0.0] - 2024-08-23
+- Support android targeting S+
+- Fix `Direct local .aar file dependencies are not supported when building an AAR` when assemble release in gradle-6.7.1 or higher.
 
 ### [2.3.0] - 2021-11-05
-Remove executorService usage in writeSocketBytes, thus JAVA native gateway can have more smoother socket response rate.
+- Remove executorService usage in writeSocketBytes, thus JAVA native gateway can have more smoother socket response rate.
 
 ### [2.2.0] - 2021-09-01
-High performance JAVA native gateway passthrough between socket and serialport without JS bridge
+- High performance JAVA native gateway passthrough between socket and serialport without JS bridge
 
 ### [2.1.0] - 2021-01-22
-USB device access pop-up suppression
+- USB device access pop-up suppression
 
 ### [2.0.0] - 2021-01-22
-Add multi usb serial port connections support
+- Add multi usb serial port connections support
 
 ## Install
 
