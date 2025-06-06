@@ -22,6 +22,7 @@ The socket part copy and modify code from [react-native-tcp-socket@5.2.1](https:
 - Replaced with remote Maven dependency: `implementation 'com.github.felHR85:UsbSerial:6.1.0'` via JitPack
 - Added JitPack repository to `repositories` block for compatibility
 - This resolves the `Direct local .aar file dependencies are not supported when building an AAR` error during `assembleRelease` in AGP 6.7.1+
+- Update RNSerialportModule.java: change FLAG_MUTABLE to FLAG_IMMUTABLE.
 
 ### [3.0.0] - 2024-08-23
 - Support android targeting S+
